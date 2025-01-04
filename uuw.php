@@ -40,32 +40,34 @@ while ($uuw==false) {
        //...
        $v_pass=false;
        $vo=32;
-       if(isset($_GET["lwl"])) {
-         if(!empty(trim($_GET["lwl"]))) {
-           if (is_numeric($_GET["lwl"])) {
-              if($_GET["lwl"] >= 32) {
+       if(isset($_GET["lwl"])) {echo 1;
+         if(!empty(trim($_GET["lwl"]))) {echo 2;
+           if (is_numeric($_GET["lwl"])) {echo 3;
+              if($_GET["lwl"] >= 32) {echo 4;
               $vo =$_GET["lwl"];
               $v_pass=true;
               }
            }
          }
        }
+       echo $v_pass;
        if (!$v_pass) {$vo=32;}
        $w[]=series($vo);
 
        $v_pass=false;
        $vo=16;
-       if(isset($_GET["swl"])) {
-         if(!empty(trim($_GET["swl"]))) {
-           if (is_numeric($_GET["swl"])) {
-              if($_GET["swl"] >= 16) {
+       if(isset($_GET["swl"])) {echo 5;
+         if(!empty(trim($_GET["swl"]))) {echo 6;
+           if (is_numeric($_GET["swl"])) {echo 7;
+              if($_GET["swl"] >= 16) {echo 7;
               $vo =$_GET["swl"];
               $v_pass=true;
               }
            }
          }
        }
-   
+
+       echo $v_pass;
        if (!$v_pass) {$vo=16;}
        $w[] =series($vo);
        $w[]=series($vo);
