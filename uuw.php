@@ -5,19 +5,19 @@ $gui=[];
 $o=[];
 $w=[];
 $pass=0;
-if(isset($_GET["lwl"])) {
+if(!isset($_GET["lwl"])) {}else{
      if(empty($_GET["lwl"])) {
         $pass=1;
      }
 }
 
-if(isset($_GET["swl"])) {
+if(!isset($_GET["swl"])) {}else{
      if(empty($_GET["swl"])) {
         $pass=2;
      }
 }
 
-if(isset($_GET["fmt"])) {
+if(isset($_GET["fmt"])) {}else{
      if(empty($_GET["fmt"])) {
        $fmt=$_GET["fmt"];
      }
