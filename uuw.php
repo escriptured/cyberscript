@@ -16,30 +16,28 @@ $w=[];
 $pass=0;
 
 function universal_auth_db($w) {
-
-   
    return true;
 }
 if(!isset($_GET["lwl"])) {}else{
-     if(!empty($_GET["lwl"])) {
+     if(!empty(trim($_GET["lwl"]))) {
         $pass=1;}}
 
 if(!isset($_GET["swl"])) {}else{
-     if(!empty($_GET["swl"])) {
+     if(!empty(trim($_GET["swl"]))) {
         $pass=$pass +2;}}
 
-if(!isset($_GET["fmt"])) {}else{
-     if(!empty($_GET["fmt"])) {
-       $fmt=$_GET["fmt"];
-       $pass=$pass+4;}}   
+if(!isset($_GET["fmt"])) {$pass=-7;}else{
+     if(!empty(trim($_GET["fmt"]))) {
+       $fmt=trim($_GET["fmt"]);
+       $pass=$pass+4;}else{$pass=-7;}   
 
 $uuw=false;
 while ($uuw==false) {
        $w[]=cur_dt();
-       $w[]=series($_GET["lwl"]);
-       $w[] =series($_GET["swl"]);
-       $w[]=series($_GET["swl"]);
-       $w[] =series($_GET["swl"]);
+       $w[]=series(trim($_GET["lwl"]));
+       $w[] =series(trim($_GET["swl"]));
+       $w[]=series(trim($_GET["swl"]));
+       $w[] =series(trim($_GET["swl"]));
        $uuw = universal_auth_db($w);}
 
 switch ($pass) {
@@ -47,5 +45,6 @@ switch ($pass) {
        echo json_encode($w);
        break;
      default:
+       $o[]='<p style="word-wrap:break-word">'.join('<br><br>',$w).'</p>';
        echo join('',$o);}
 ?>
