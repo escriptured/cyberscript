@@ -46,8 +46,9 @@ switch ($pass) {
        break;
      default:
        $res = join('<br><br>',$w);
-       $o[]='
-
+       $o[]='<html>
+              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+              <body style="background-color:grey;font-color:red">
        ';
        $o[]='<p style="word-wrap:break-word">'.$res.'</p>';
        $o[]='</body></html>';
