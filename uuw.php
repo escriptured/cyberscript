@@ -45,6 +45,7 @@ switch ($pass) {
        echo json_encode($w);
        break;
      default:
-       $o[]='<p style="word-wrap:break-word">'.join('<br><br>',$w).'</p>';
+       $res = join('<br><br>',$w);
+       $o[]='<p style="word-wrap:break-word">'.$res.'</p>';
        echo join('',$o);}
 ?>
