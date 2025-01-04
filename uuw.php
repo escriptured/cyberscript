@@ -50,7 +50,7 @@ while ($uuw==false) {
            }
          }
        }
-       echo $v_pass;
+       echo 'pass -'.$v_pass.'#';
        if (!$v_pass) {$vo=32;}
        $w[]=series($vo);
 
@@ -74,7 +74,7 @@ while ($uuw==false) {
        $w[] =series($vo);
        $uuw =universal_auth_db($w);}
 
-echo "1233".$pass;
+echo "-65767".$pass;
 switch ($pass) {
     case 4:
     case 5:
