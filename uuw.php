@@ -1,6 +1,20 @@
 <?php
 
+include '../escriptured/main/sf.php';
 $o=[];
+$pass=0;
+if(isset($_GET["lwl"]) {
+     if(empty($_GET["lwl"]) {
+        $pass=1;
+     }
+}
+
+if(isset($_GET["swl"]) {
+     if(empty($_GET["swl"]) {
+        $pass=2;
+     }
+}
+echo "aaaa";
 
 $o[]='<!DOCTYPE html>
 <html lang="en">
@@ -11,16 +25,23 @@ $o[]='<!DOCTYPE html>
         <title>UUW</title>
         <link rel="stylesheet" href="style.css" />
     </head>
+';
+switch ($pass) {
+    case 3:
+
+    
+    default:
+
+$o[]='
     <body>
         <div class="container">
             <div class="header">
-                <p class="quote" id="quote">Unique universal words</p>
-                <button class="btn" id="btn">Generate</button>
+                <a href="uuw.php?lwl=256&swl=16" <button class="btn" id="btn">Generate</button></a>
             </div>
         </div>
-        <!-- Javascript includes -->
-        <script src="index.js"></script>
-    </body>
+    </body>';
+}    
+$o[]='
 </html>';
 
 echo join('',$o);
