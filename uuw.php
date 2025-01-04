@@ -67,7 +67,7 @@ while ($uuw==false) {
          }
        }
 
-       echo $v_pass;
+       echo 'pass -'.$v_pass.'#';
        if (!$v_pass) {$vo=16;}
        $w[] =series($vo);
        $w[]=series($vo);
