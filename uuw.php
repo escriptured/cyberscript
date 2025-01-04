@@ -15,10 +15,26 @@ $o=[];
 $w=[];
 $pass=0;
 
-function universal_auth_db($a) {
 
-   return true;
+
+function universal_auth_db($a) {
+   $re=-1;
+   $d=[];
+   for($v =0;$v<count($a)-2;$v++) {
+       $d[]=$a[$v];
+       $f= join('/',$d);
+       if(file_exists($f)) {
+          $re=0;
+       } else {
+          if(createdd($f) {
+          $re=1;
+          }
+       }
+   }
+   return $re;
 }
+
+/*
 if(!isset($_GET["lwl"])) {}else{
      if(!empty(trim($_GET["lwl"]))) {
         $pass=1;}}
@@ -91,4 +107,7 @@ switch ($pass) {
        $o[]='<p style="border:5px;word-wrap:break-word;font-size:65%">'.$res.'</p>';
        $o[]='</body></html>';
        echo join('',$o);}
+
+*/
+
 ?>
