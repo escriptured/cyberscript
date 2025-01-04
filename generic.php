@@ -103,5 +103,5 @@ function db($ph,$d) {
   }
   return $c;
 }
-echo series(3);
+
 ?>
