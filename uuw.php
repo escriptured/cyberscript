@@ -28,7 +28,7 @@ if(!isset($_GET["fmt"])) {}else{
     $w[]=series($_GET["swl"]);
     $w[] =series($_GET["swl"]);
 
-
+echo $pass;
 switch ($pass) {
     case 7:
        echo json_encode($w);
