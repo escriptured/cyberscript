@@ -4,6 +4,9 @@
 date_default_timezone_set('UTC');
 $dr=$_SERVER['DOCUMENT_ROOT'];
 
+function cur_dt() {
+  return [date('Y m d H i s'),'UTC'];
+}
 function setuseralias($n,$a,$u,$c,$d) {
    $ar=[];
    $dr=$_SERVER['DOCUMENT_ROOT'];
