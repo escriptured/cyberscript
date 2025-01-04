@@ -42,7 +42,7 @@ while ($uuw==false) {
        $vo=32;
        if(isset($_GET["lwl"])) {
          if(!empty(trim($_GET["lwl"]))) {
-           if (is_numeric($v)) {
+           if (is_numeric($_GET["lwl"])) {
               if($v >= 32) {
               $vo =$_GET["lwl"];
               $v_pass=true;
@@ -57,7 +57,7 @@ while ($uuw==false) {
        $vo=16;
        if(isset($_GET["swl"])) {
          if(!empty(trim($_GET["swl"]))) {
-           if (is_numeric($v)) {
+           if (is_numeric($_GET["swl"])) {
               if($v >= 16) {
               $vo =$_GET["swl"];
               $v_pass=true;
@@ -72,7 +72,7 @@ while ($uuw==false) {
        $w[] =series($vo);
        $uuw =universal_auth_db($w);}
 
-echo "1116 ".$pass;
+
 switch ($pass) {
     case 4:
     case 5:
