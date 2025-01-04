@@ -14,8 +14,7 @@ $o[]='<!DOCTYPE html>
     <body>
         <div class="container">
             <div class="header">
-                <h1>ID</h1>
-                <p class="quote" id="quote">GUID</p>
+                <p class="quote" id="quote">Generate a UUID</p>
                 <button class="btn" id="btn">Generate</button>
             </div>
         </div>
