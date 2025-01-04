@@ -10,34 +10,36 @@ v1.0.0.0
 2. cyberscript services, methods and code is intellectual property owned by British-Nigerian Mr Andrew Jehwo / London, UK.
 
 
-4. up-front payment may be required for some of cyberscript cyber services and data.
+3. up-front payment may be required for some of cyberscript cyber services and data.
 
 
-6. cyberscript is a global interactive database service, for non-personal or non-intellectual property activity.
+4. cyberscript is a global interactive database service, for non-personal or non-intellectual property activity.
 
 
-7. cyberscript provides a number of proprietary methods, data formats & data structures, that are not free to copy or perform independantly.
+5. cyberscript provides a number of proprietary methods, data formats & data structures, that are not free to copy or perform independantly.
 
 
-8. cyberscript services cannot be processed or accessed, without prior permission from cyberscript.
+6. cyberscript services cannot be processed or accessed, without prior permission from cyberscript.
 
 
-9. customers of cyberscript services is a pay up-front set of services and must not be processed, without a the relevant service manual.
+7. customers of cyberscript services is a pay up-front set of services and must not be processed, without a the relevant service manual.
 
 
-10. its a requirement for customers of cyberscript services, to read the guidelines in the README.md file.
+8. its a requirement for customers of cyberscript services, to read the guidelines in the README.md file.
 
 
-11. its a requirement for customers of cyberscript services, to abide by the terms and conditions in the README.md file.
+9. its a requirement for customers of cyberscript services, to abide by the terms and conditions in the README.md file.
 
 
-12. Each service will come with a TERMS.md file, on how to process services, limitations of services, payment and subscription terms and how to make contact with general services.
+10. Each service will come with a TERMS.md file, on how to process services, limitations of services, payment and subscription terms and how to make contact with general services.
 
 
-13. customers may be required to register for a api-key, to use some of the services.
+11. customers may be required to register for a api-key, to use some of the services.
 
 
-14. customers may need to provide personal details, to be contacted regarding new services and application upgrades, surveys and also in response to customer queries.
+12. customers may need to provide personal details, to be contacted regarding new services and application upgrades, surveys and also in response to customer queries.
 
 
-15. cyberscript does not take redponsibility for any costs associated to the customer, including processing with any service provided for or by cyberscript or any other associated process or outcome.
+13. cyberscript does not take responsibility for any costs associated to the customer, including processing with any service provided for or by cyberscript or any other associated process or outcome.
+
+(c) escriptured-mr aeoj
