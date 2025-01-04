@@ -20,22 +20,22 @@ $pass=0;
 function universal_auth_db($a) {
    $re=-1;
    $d=[];
-   for($v =0;$v<count($a)-2;$v++) {
+   for($v =1;$v<count($a)-2;$v++) {
        $d[]=$a[$v];
        $f= '_@_'.join('/',$d);
        if(file_exists($f)) {
           $re=0;
        } else {
-          echo $f;
-          /*if(created($f) {*/
-          $re=1;
-         /* }*/
+          /*if(created($f)) {
+            file_put_contents($f.'/uuw.php',json_encode($a));
+            $re=1;
+          }*/
        }
    }
    return $re;
 }
 
-echo " # ".universal_auth_db(["test_sandbox","1","2","3"])." # ";
+echo " # ".universal_auth_db(["Jan-2025","test_sandbox","1","2","3"])." # ";
 /*
 if(!isset($_GET["lwl"])) {}else{
      if(!empty(trim($_GET["lwl"]))) {
@@ -53,7 +53,7 @@ if(!isset($_GET["fmt"])) {}else{
 
 $uuw=false;
 while ($uuw==false) {
-       $w["created"]=join(' ',cur_dt());
+       $w[]=join(' ',cur_dt());
 
        //...
        $v_pass=false;
