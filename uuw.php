@@ -29,6 +29,7 @@ if(!isset($_GET["fmt"])) {}else{
 
 $uuw=false;
 while ($uuw==false) {
+       $w[]=cur_dt();
        $w[]=series($_GET["lwl"]);
        $w[] =series($_GET["swl"]);
        $w[]=series($_GET["swl"]);
