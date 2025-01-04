@@ -72,7 +72,7 @@ while ($uuw==false) {
        $w[] =series($vo);
        $uuw =universal_auth_db($w);}
 
-echo $pass;
+echo "7576 ".$pass;
 switch ($pass) {
     case 5:
     case 6:
