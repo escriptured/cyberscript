@@ -17,7 +17,7 @@ if(!isset($_GET["swl"])) {}else{
      }
 }
 
-if(isset($_GET["fmt"])) {}else{
+if(!isset($_GET["fmt"])) {}else{
      if(empty($_GET["fmt"])) {
        $fmt=$_GET["fmt"];
      }
@@ -27,7 +27,7 @@ if(isset($_GET["fmt"])) {}else{
 
 switch ($pass) {
     case 3:
-    $w[]= series($_GET["lwl"]);
+    $w[]=series($_GET["lwl"]);
     $w[] =series($_GET["swl"]);
     $w[]=series($_GET["swl"]);
     $w[] =series($_GET["swl"]);
