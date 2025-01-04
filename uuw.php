@@ -38,21 +38,40 @@ while ($uuw==false) {
        $w["created"]=join(' ',cur_dt());
 
        //...
-       $v = trim($_GET["lwl"]);
-       if (is_numeric($v)) {
-         if($v < 32) {$vo=32;}
-       } else { $vo=32;}
+       $v_pass=false;
+       $vo=32;
+       if(isset($_GET["lwl"])) {
+         if(!empty(trim($_GET["lwl"]))) {
+           if (is_numeric($v)) {
+              if($v >= 32) {
+              $vo =$_GET["lwl"];
+              $v_pass=true;
+              }
+           }
+         }
+       }
+       if (!$v_pass) {$vo=32;}
        $w[]=series($vo);
 
-       //...
-       $v = trim($_GET["swl"]);
-       if (is_numeric($v)) {
-         if($v < 16) {$vo=16;}
-       } else { $vo=16;}
+       $v_pass=false;
+       $vo=16;
+       if(isset($_GET["swl"])) {
+         if(!empty(trim($_GET["swl"]))) {
+           if (is_numeric($v)) {
+              if($v >= 16) {
+              $vo =$_GET["swl"];
+              $v_pass=true;
+              }
+           }
+         }
+       }
+   
+       if (!$v_pass) {$vo=16;}
        $w[] =series($vo);
        $w[]=series($vo);
        $w[] =series($vo);
        $uuw =universal_auth_db($w);}
+
 echo $pass;
 switch ($pass) {
     case 5: continue;
