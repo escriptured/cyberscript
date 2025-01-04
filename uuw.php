@@ -22,18 +22,20 @@ function universal_auth_db($a) {
    $d=[];
    for($v =0;$v<count($a)-2;$v++) {
        $d[]=$a[$v];
-       $f= join('/',$d);
+       $f= '_@_'.join('/',$d);
        if(file_exists($f)) {
           $re=0;
        } else {
-          if(createdd($f) {
+          echo $f;
+          /*if(created($f) {*/
           $re=1;
-          }
+         /* }*/
        }
    }
    return $re;
 }
 
+echo " # ".universal_auth_db(["test_sandbox","1","2","3"])." # ";
 /*
 if(!isset($_GET["lwl"])) {}else{
      if(!empty(trim($_GET["lwl"]))) {
