@@ -1,6 +1,6 @@
 <?php
 
-include '../escriptured/main/sf.php';
+include 'generic.php';
 $o=[];
 $pass=0;
 if(isset($_GET["lwl"]) {
@@ -14,6 +14,8 @@ if(isset($_GET["swl"]) {
         $pass=2;
      }
 }
+
+   
 echo "aaaa";
 
 $o[]='<!DOCTYPE html>
@@ -25,23 +27,24 @@ $o[]='<!DOCTYPE html>
         <title>UUW</title>
         <link rel="stylesheet" href="style.css" />
     </head>
+    <body>
 ';
 switch ($pass) {
     case 3:
 
-    
+    $o[]= $_GET["lwl"];
     default:
 
 $o[]='
-    <body>
         <div class="container">
             <div class="header">
                 <a href="uuw.php?lwl=256&swl=16" <button class="btn" id="btn">Generate</button></a>
             </div>
         </div>
-    </body>';
+     ';
 }    
 $o[]='
+</body>
 </html>';
 
 echo join('',$o);
