@@ -3,9 +3,10 @@
 // Legal, Terms and Conditions
 // Proprietary Source-Code
 // Mr Andrew. O. E. N. J
-/* Generates a unique universal words
+/* Insures the customer has
+   unique universal word data,
    for database privilages and
-   general use 
+   general use.
 */
 
 
