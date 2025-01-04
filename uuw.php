@@ -43,7 +43,7 @@ while ($uuw==false) {
        if(isset($_GET["lwl"])) {
          if(!empty(trim($_GET["lwl"]))) {
            if (is_numeric($_GET["lwl"])) {
-              if($v >= 32) {
+              if($_GET["lwl"] >= 32) {
               $vo =$_GET["lwl"];
               $v_pass=true;
               }
@@ -58,7 +58,7 @@ while ($uuw==false) {
        if(isset($_GET["swl"])) {
          if(!empty(trim($_GET["swl"]))) {
            if (is_numeric($_GET["swl"])) {
-              if($v >= 16) {
+              if($_GET["swl"] >= 16) {
               $vo =$_GET["swl"];
               $v_pass=true;
               }
