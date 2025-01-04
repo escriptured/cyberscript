@@ -30,6 +30,7 @@ function universal_auth_db($a) {
             file_put_contents($f.'/uuw.php',json_encode($a));
             $re=1;
           }*/
+          $re=1;
        }
    }
    return $re;
