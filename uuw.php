@@ -52,9 +52,11 @@ while ($uuw==false) {
        $w[] =series($vo);
        $w[]=series($vo);
        $w[] =series($vo);
-       $uuw = universal_auth_db($w);}
+       $uuw =universal_auth_db($w);}
 
 switch ($pass) {
+    case 5: continue;
+    case 6: continue;
     case 7:
        echo json_encode($w);
        break;
