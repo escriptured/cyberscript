@@ -33,7 +33,7 @@ if(!isset($_GET["fmt"])) {}else{
 
 $uuw=false;
 while ($uuw==false) {
-       $w[]=cur_dt();
+       $w[]=join(' ',cur_dt());
        $w[]=series(trim($_GET["lwl"]));
        $w[] =series(trim($_GET["swl"]));
        $w[]=series(trim($_GET["swl"]));
@@ -46,6 +46,10 @@ switch ($pass) {
        break;
      default:
        $res = join('<br><br>',$w);
+       $o[]='
+
+       ';
        $o[]='<p style="word-wrap:break-word">'.$res.'</p>';
+       $o[]='</body></html>';
        echo join('',$o);}
 ?>
