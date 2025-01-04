@@ -26,10 +26,10 @@ if(!isset($_GET["swl"])) {}else{
      if(!empty(trim($_GET["swl"]))) {
         $pass=$pass +2;}}
 
-if(!isset($_GET["fmt"])) {$pass=-7;}else{
+if(!isset($_GET["fmt"])) {}else{
      if(!empty(trim($_GET["fmt"]))) {
        $fmt=trim($_GET["fmt"]);
-       $pass=$pass+4;}else{$pass=-7;}   
+       $pass=$pass+4;}}  
 
 $uuw=false;
 while ($uuw==false) {
