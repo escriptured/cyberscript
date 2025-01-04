@@ -42,16 +42,16 @@ while ($uuw==false) {
        if (is_numeric($v)) {
          if($v < 32) {$vo=32;}
        } else { $vo=32;}
-       $w["long_word_api-key"]=[series($vo)];
+       $w[]=series($vo);
 
        //...
        $v = trim($_GET["swl"]);
        if (is_numeric($v)) {
          if($v < 16) {$vo=16;}
        } else { $vo=16;}
-       $w["short_word"][] =[series($vo)];
-       $w["short_word"][]=[series($vo)];
-       $w["short_word"][] =[series($vo)];
+       $w[] =series($vo);
+       $w[]=series($vo);
+       $w[] =series($vo);
        $uuw = universal_auth_db($w);}
 
 switch ($pass) {
