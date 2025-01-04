@@ -5,19 +5,19 @@ $o=[];
 $w=[];
 $pass=0;
 if(!isset($_GET["lwl"])) {}else{
-     if(empty($_GET["lwl"])) {
+     if(!empty($_GET["lwl"])) {
         $pass=1;
      }
 }
 
 if(!isset($_GET["swl"])) {}else{
-     if(empty($_GET["swl"])) {
+     if(!empty($_GET["swl"])) {
         $pass=$pass +2;
      }
 }
 
 if(!isset($_GET["fmt"])) {}else{
-     if(empty($_GET["fmt"])) {
+     if(!empty($_GET["fmt"])) {
        $fmt=$_GET["fmt"];
        $pass=$pass+4;
      }
