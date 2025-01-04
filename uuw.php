@@ -15,7 +15,8 @@ $o=[];
 $w=[];
 $pass=0;
 
-function universal_auth_db($w) {
+function universal_auth_db($a) {
+
    return true;
 }
 if(!isset($_GET["lwl"])) {}else{
@@ -31,13 +32,26 @@ if(!isset($_GET["fmt"])) {}else{
        $fmt=trim($_GET["fmt"]);
        $pass=$pass+4;}}  
 
+
 $uuw=false;
 while ($uuw==false) {
-       $w[]=join(' ',cur_dt());
-       $w[]=series(trim($_GET["lwl"]));
-       $w[] =series(trim($_GET["swl"]));
-       $w[]=series(trim($_GET["swl"]));
-       $w[] =series(trim($_GET["swl"]));
+       $w["created"]=join(' ',cur_dt());
+
+       //...
+       $v = trim($_GET["lwl"]);
+       if (is_numeric($v)) {
+         if($v < 32) {$vo=32;}
+       } else { $vo=32;}
+       $w["long_word_api-key"]=[series($vo)];
+
+       //...
+       $v = trim($_GET["swl"]);
+       if (is_numeric($v)) {
+         if($v < 16) {$vo=16;}
+       } else { $vo=16;}
+       $w["short_word"][] =[series($vo)];
+       $w["short_word"][]=[series($vo)];
+       $w["short_word"][] =[series($vo)];
        $uuw = universal_auth_db($w);}
 
 switch ($pass) {
