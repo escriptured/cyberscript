@@ -1,8 +1,11 @@
 <?php
 
 include 'generic.php';
+
 $gui=[];
 $o=[];
+$o[]=series(5);
+/*
 $w=[];
 $pass=0;
 if(!isset($_GET["lwl"])) {}else{
@@ -77,7 +80,7 @@ switch ($fmt) {
        </body>
        </html>';
 }
-
+*/
 
 echo join('',$o);
 ?>
