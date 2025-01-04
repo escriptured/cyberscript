@@ -14,6 +14,12 @@ include 'generic.php';
 $o=[];
 $w=[];
 $pass=0;
+
+function universal_auth_db($w) {
+
+   
+   return true;
+}
 if(!isset($_GET["lwl"])) {}else{
      if(!empty($_GET["lwl"])) {
         $pass=1;}}
@@ -34,7 +40,7 @@ while ($uuw==false) {
        $w[] =series($_GET["swl"]);
        $w[]=series($_GET["swl"]);
        $w[] =series($_GET["swl"]);
-       $uuw = true;}
+       $uuw = universal_auth_db($w);}
 
 switch ($pass) {
     case 7:
