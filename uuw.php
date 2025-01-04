@@ -69,7 +69,7 @@ switch ($fmt) {
        switch ($pass) {
             case 3
                $o[]=join('<br><br>',$w);
-               break:
+               break;
             default:
        }
 
