@@ -26,11 +26,10 @@ function universal_auth_db($a) {
        if(file_exists($f)) {
           $re=0;
        } else {
-          /*if(created($f)) {
+          if(created($f)) {
             file_put_contents($f.'/uuw.php',json_encode($a));
             $re=1;
-          }*/
-          $re=1;
+          }
        }
    }
    return $re;
