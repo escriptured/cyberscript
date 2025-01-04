@@ -88,7 +88,7 @@ switch ($pass) {
               <meta name="viewport" content="width=device-width, initial-scale=1.0" />
               <body style="background-color:green;color:white">
        ';
-       $o[]='<p style="border:5px;word-wrap:break-word;font-size:70%">'.$res.'</p>';
+       $o[]='<p style="border:5px;word-wrap:break-word;font-size:65%">'.$res.'</p>';
        $o[]='</body></html>';
        echo join('',$o);}
 ?>
