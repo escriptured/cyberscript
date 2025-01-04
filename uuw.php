@@ -74,8 +74,8 @@ while ($uuw==false) {
 
 echo $pass;
 switch ($pass) {
-    case 5: continue;
-    case 6: continue;
+    case 5:
+    case 6:
     case 7:
        echo json_encode($w);
        break;
