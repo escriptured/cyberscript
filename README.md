@@ -1,8 +1,10 @@
 # Cyberscript
 Terms & Conditions
 
+
 05-Jan-2025
 4. and a international no-coincident end-point reference, suitable for customer application processes, and data points referencing.
+
 
 04-Jan-2025
 v1.0.0.0
@@ -48,4 +50,4 @@ v1.0.0.0
 
 16. cyberscript does not take responsibility for any costs associated to the customer, including processing with any service provided for or by cyberscript or any other associated process or outcome.
 
-(c) escriptured-mr aeoj
+(c) escriptured-mr aeonj
