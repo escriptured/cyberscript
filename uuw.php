@@ -72,7 +72,7 @@ while ($uuw<1) {
        }
        
        if (!$v_pass) {$vo=32;}
-       $w[1]=series($vo);
+       $w["1"]=series($vo);
 
        $v_pass=false;
        $vo=16;
@@ -93,7 +93,7 @@ while ($uuw<1) {
        $w["3"]=series($vo);
        $w["4"] =series($vo);
        $dat=universal_auth_db($w);
-       echo var_dump($dat)."-";
+       //echo var_dump($dat)."-";
        $uuw=$dat[0];}
 
 //echo var_dump($dat[1])." ## ";
