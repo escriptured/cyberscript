@@ -16,7 +16,7 @@ $o[]='
   $o[]='
       <tr style="height:20px">
          <td style="">
-             <img src="ico_0.jpeg" style="height:35px;width:35px">
+             <img src="ico_0.jpg" style="height:35px;width:35px">
          </td>
       </tr>';
   $o[]='
