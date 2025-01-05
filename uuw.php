@@ -15,12 +15,12 @@ $o=[];
 $w=[];
 $pass=0;
 
-function universal_auth_db($a) {
-   $re=false;  //-1;
+function universal_auth_db($a,$m) {
+   $re=[-1,""];
    $d=[];
-   /*for($v =1;$v<count($a)-1;$v++) {
+   for($v =1;$v<count($a)-1;$v++) {
        $d[]=$a[$v];
-       $f= '_@_'.join('/',$d);
+       $f= 'x_@_'.join('/',$d);
        if(is_file_existing($f)) {
           if(is_file_existing($f.'endpoint.php')) {            
             $re=[2,json_decode(readf($f.'endpoint.php',0),true)];
@@ -34,10 +34,10 @@ function universal_auth_db($a) {
             $re=[1,json_decode(readf($f.'endpoint.php',"1"),true)];
           }
        }
-   }*/
+   }
 
    
-   return true; //$re;
+   return $re;
 }
 
 //echo " ## ".var_dump(universal_auth_db(["created"=>"2025 01 05 02 20 51 UTC","lw"=>"FaD93Rzr6NrB6f8VcxE2hz96B6P7tjAg","sw_1"=>"n1HjxFvptGsABn4t","sw_2"=>"BPuBVzmhbVk22J2C","sw_3"=>"m3XE4wvf3fp1pqW7"]))." # ";
@@ -55,10 +55,10 @@ if(!isset($_GET["fmt"])) {}else{
        $pass=$pass+4;}}  
 
 
-$uuw=false;
-while (!$uuw) {
-       $w[]=join(' ',cur_dt());
-
+$uuw=[-1,""];
+while ($uuw[0]<0)) {
+       $ww["lw"]=join(' ',cur_dt());
+       $w[]=$ww["lw"];
        //...
        $v_pass=false;
        $vo=32;
@@ -74,8 +74,8 @@ while (!$uuw) {
        }
        
        if (!$v_pass) {$vo=32;}
-       $w[]=series($vo);
-
+       $ww["1"]=series($vo);
+       $w[]=$ww["1"];
        $v_pass=false;
        $vo=16;
        if(isset($_GET["swl"])) {
@@ -91,15 +91,18 @@ while (!$uuw) {
 
        
        if (!$v_pass) {$vo=16;}
-       $w[] =series($vo);
-       $w[]=series($vo);
-       $w[] =series($vo);
-       $uuw=universal_auth_db($w);
+       $ww["2"] =series($vo);
+       $w[]=$ww["2"];
+       $ww["3"]=series($vo);
+       $w[]=$ww["3"];
+       $ww["4"] =series($vo);
+       $w[]=$ww["4"];
+       $uuw=universal_auth_db($ww);
        //echo var_dump($dat)."-";
        }
 
 //echo var_dump($dat[1])." ## ";
-echo " #### ".$pass;
+echo " ## ".$pass;
 switch ($pass) {
     case 4:
     case 5:
