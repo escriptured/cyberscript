@@ -27,9 +27,10 @@ function universal_auth_db($a) {
           $re=0;
        } else {
           if(created($f)) {
-            file_put_contents($f.'/endpoint.php',json_encode($a));
+            /*file_put_contents($f.'/endpoint.php',json_encode($a));
             $re=-2;
             echo file_get_contents($f.'/endpoint.php');
+            */
             $re=1;
           }
        }
