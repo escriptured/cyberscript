@@ -24,13 +24,11 @@ function universal_auth_db($a) {
        $d[]=$a[$v];
        $f= '_@_'.join('/',$d);
        if(is_file_existing($f)) {
-          if(is_file_existing($f.'endpoint.php')) {
-             
+          if(is_file_existing($f.'endpoint.php')) {            
             $re=[2,readf($f.'endpoint.php',0)];
           } else {
-            writef($f.'endpoint.php',json_encode($a),"w");
+             writef($f.'endpoint.php',json_encode($a),"w");
              $re=[3,readf($f.'endpoint.php',"1")];
-            
           }
        } else {
           if(created($f)) {
@@ -45,7 +43,6 @@ function universal_auth_db($a) {
 $fe=universal_auth_db(["Jan-2025","test_sandbox","0","1","2"]);
 echo " # ";
 if($fe[0]>0) {
-   
    echo $fe[1];
 }
 
