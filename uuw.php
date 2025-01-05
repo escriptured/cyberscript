@@ -16,7 +16,7 @@ $o=[];
 $w=[];
 $pass=0;
 
-function universal_auth_db($a,$m) {
+function universal_auth_db($a) {
    $re=[-1,""];
    $d=[];
    for($v =1;$v<count($a)-1;$v++) {
