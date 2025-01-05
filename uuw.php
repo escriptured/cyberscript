@@ -102,7 +102,8 @@ while ($uuw<1) {
        $w["sw_1"] =series($vo);
        $w["sw_2"]=series($vo);
        $w["sw_3"] =series($vo);
-       $dat=universal_auth_db($w);$uuw=$dat[0];}
+       $dat=universal_auth_db($w);
+       $uuw=$dat[0];}
 
 echo var_dump($dat[1])." ## ";
 
