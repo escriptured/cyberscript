@@ -9,7 +9,8 @@
    general use.
 */
 
-// PHASE : CI
+// PHASE : CI 
+// DRAFT : B1.0.0.0
 include 'generic.php';
 $o=[];
 $w=[];
