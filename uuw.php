@@ -129,8 +129,8 @@ while ($uuw<0) {
        //echo var_dump($dat)."-";
        }
 
-echo var_dump($dat[1])." +++++ ";
-echo " --- ".$pass;
+echo var_dump($dat[1])." ++ ";
+echo " ___ ".$pass;
 switch ($pass) {
     case 4:
     case 5:
