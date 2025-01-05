@@ -38,7 +38,7 @@ function universal_auth_db($a) {
    return $re;
 }
 
-echo " ## ".var_dump(universal_auth_db(["created"=>"2025 01 05 02 20 51 UTC","lw"=>"FaD93Rzr6NrB6f8VcxE2hz96B6P7tjAg","sw_1"=>"n1HjxFvptGsABn4t","sw_2"=>"BPuBVzmhbVk22J2C","sw_3"=>"m3XE4wvf3fp1pqW7"]))." # ";
+//echo " ## ".var_dump(universal_auth_db(["created"=>"2025 01 05 02 20 51 UTC","lw"=>"FaD93Rzr6NrB6f8VcxE2hz96B6P7tjAg","sw_1"=>"n1HjxFvptGsABn4t","sw_2"=>"BPuBVzmhbVk22J2C","sw_3"=>"m3XE4wvf3fp1pqW7"]))." # ";
 if(!isset($_GET["lwl"])) {}else{
      if(!empty(trim($_GET["lwl"]))) {
         $pass=1;}}
