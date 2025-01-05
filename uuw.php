@@ -56,7 +56,7 @@ if(!isset($_GET["fmt"])) {}else{
 
 
 $uuw=false;
-while ($uuw) {
+while (!$uuw) {
        $w[]=join(' ',cur_dt());
 
        //...
