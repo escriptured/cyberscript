@@ -34,9 +34,13 @@ function getuseralias($n,$a) {
    }
    return $r;
 }
-function checkfile($a) {
-
-
+function is_file_existing($n) {
+   $re=false;
+   $dr=$_SERVER['DOCUMENT_ROOT'];
+   $fn = $dr.$n;
+   
+   if(file_exists($fn)){$re =true;}
+   return $re;
 }
 function series($n) {
    $a="abcdefghjkmnpqrstuvwxyz123456789";
