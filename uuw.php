@@ -18,7 +18,7 @@ $o=[];
 $w=[];
 $pass=0;
 
-function the_universal_auth_db($a) {
+/*function the_universal_auth_db($a) {
    $re=false;
 
         // create
@@ -39,9 +39,9 @@ function the_universal_auth_db($a) {
           }
        }
     }*/
-   $re=true;
+ /*  $re=true;
    return $re;
-}
+}*/
 
 /*function assemble_d($a) {
    return ["created"=>"'.$a[0].'","lw"=>"'.$a[1].'","sw_1"=>"'.$a[2].'","sw_2"=>"'.$a[3].'","sw_3"=>"'.$a[4].'"];}
@@ -50,7 +50,7 @@ function the_universal_auth_db($a) {
 //$example=universal_auth_db(assemble_d(["YeHtfc1n668RH125XQkgp1ZUqNDP36Yv","8sZ219rWuP34t7nv","4s52dY57s8ydZf9r","8kbm2b2yxNtfM6xP"]),1);
 //echo '#### '.var_dump($example);
 
-if(!isset($_GET["lwl"])) {}else{
+/*if(!isset($_GET["lwl"])) {}else{
      if(!empty(trim($_GET["lwl"]))) {
         $pass=1;}}
 
@@ -105,9 +105,9 @@ while ($uuw) {
        $w[] =series($vo);
        $uuw=the_universal_auth_db($w);*/
        $uuw=true;
-   }
+ /*  }
        
-
+*/
 //echo var_dump($dat[1])." ++ ";
 echo " ___ ".$pass;
 switch ($pass) {
