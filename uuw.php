@@ -28,7 +28,8 @@ function universal_auth_db($a) {
           if(is_file_existing($f.'endpoint.php')) {
           $re=3;
           } else {
-          $re=4;
+            writef($f.'endpoint.php',json_encode($a),"w");
+             $re=5;
           }
        } else {
           
