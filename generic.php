@@ -34,6 +34,10 @@ function getuseralias($n,$a) {
    }
    return $r;
 }
+function checkfile($a) {
+
+
+}
 function series($n) {
    $a="abcdefghjkmnpqrstuvwxyz123456789";
    $s=[];
@@ -68,7 +72,7 @@ function readf($n,$b) {
    $fn = $dr.$n;
    $c="init";
    if(file_exists($fn)) {
-      if (empty($b)) {
+      if (empty(trim($b))) {
         $c= file_get_contents($fn);
       } else {
         $c =file_get_contents($fn,true);
@@ -78,14 +82,7 @@ function readf($n,$b) {
    }
 }
 
-
-//writef("a_test1.php","");
-//file_put_contents("a_test2.php","");
-
-//setuseralias("a_test2.php",series(50),"Foo","PDA",["1.0.0",10,63.65,23.07,44.76]);
 function impression($fn) {
-  // $dr=$_SERVER['DOCUMENT_ROOT'];
-   //$fn = $dr.$n;
 $c=0;
 $c =readf($fn,"");
 $c=$c+1;
