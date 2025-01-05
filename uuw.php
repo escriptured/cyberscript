@@ -43,7 +43,7 @@ function universal_auth_db($a) {
 
 $fe=universal_auth_db(["created"=>"Jan-2025","lw" =>"test_sandbox","sw_1" =>"1","sw_2"=> "1","sw_3"=>"3"]);
 if($fe[0]>0) {
-   echo $fe[1];
+   echo var_dump($fe[1]);
 }
 
 
