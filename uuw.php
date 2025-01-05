@@ -92,9 +92,9 @@ while ($uuw<1) {
        $w["2"] =series($vo);
        $w["3"]=series($vo);
        $w["4"] =series($vo);
-       $dat=universal_auth_db($w);
+       $uuw=universal_auth_db($w)[0];
        //echo var_dump($dat)."-";
-       $uuw=$dat[0];}
+       }
 
 //echo var_dump($dat[1])." ## ";
 
