@@ -23,7 +23,7 @@ function universal_auth_db($a) {
    for($v =1;$v<count($a)-2;$v++) {
        $d[]=$a[$v];
        $f= '_@_'.join('/',$d);
-       if(file_exists($f)) {
+       if(is_file_existing($f)) {
           $re=0;
        } else {
           $re=-3;
@@ -39,7 +39,7 @@ function universal_auth_db($a) {
    return $re;
 }
 
-echo " 18 # ".universal_auth_db(["Jan-2025","test_sandbox","0","1","2"])." # ";
+echo " 32 # ".universal_auth_db(["Jan-2025","test_sandbox","0","1","2"])." # ";
 /*
 if(!isset($_GET["lwl"])) {}else{
      if(!empty(trim($_GET["lwl"]))) {
