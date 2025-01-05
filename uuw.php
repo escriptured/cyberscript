@@ -19,11 +19,10 @@ $w=[];
 $pass=0;
 
 function universal_auth_db($a) {
-   $re=[-1,""];
-   $d=[];
+   $re=false;
 
         // create
-    for($v =1;$v<count($a)-1;$v++) {
+   /* for($v =1;$v<count($a)-1;$v++) {
        $d[]=$a[$v];
        $f= 'x_@_'.join('/',$d);
        if(is_file_existing($f)) {
@@ -39,7 +38,8 @@ function universal_auth_db($a) {
             $re=[1,json_decode(readf($f.'endpoint.php',"1"),true)];
           }
        }
-    }
+    }*/
+   $re=true;
    return $re;
 }
 
@@ -64,8 +64,8 @@ if(!isset($_GET["fmt"])) {}else{
        $pass=$pass+4;}}  
 
 
-$uuw=-1;
-while ($uuw<0) {
+$uuw=false;
+while ($uuw) {
        $w=[];
        $ww["lw"]=join(' ',cur_dt());
        $w[]=$ww["lw"];
@@ -108,7 +108,7 @@ while ($uuw<0) {
        $ww["4"] =series($vo);
        $w[]=$ww["4"];
        echo 1;
-       $uuw=universal_auth_db($ww)[0]; echo 2;}
+       $uuw=universal_auth_db($ww); echo 2;}
        
 
 //echo var_dump($dat[1])." ++ ";
