@@ -99,7 +99,7 @@ while ($uuw) {
        }
 
 //echo var_dump($dat[1])." ## ";
-
+echo " # ".$pass;
 switch ($pass) {
     case 4:
     case 5:
