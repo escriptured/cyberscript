@@ -37,17 +37,18 @@ function universal_auth_db($a) {
           }
        }
    }
+   
    return $re;
 }
 
-
+/*
 $fe=universal_auth_db(["created"=>"Jan-2025","lw" =>"test_sandbox","sw_1" =>"1","sw_2"=> "1","sw_3"=>"3"]);
 if($fe[0]>0) {
    echo var_dump($fe[1]);
-}
+}*/
 
 
-/*
+
 if(!isset($_GET["lwl"])) {}else{
      if(!empty(trim($_GET["lwl"]))) {
         $pass=1;}}
@@ -62,8 +63,8 @@ if(!isset($_GET["fmt"])) {}else{
        $pass=$pass+4;}}  
 
 
-$uuw=false;
-while ($uuw==false) {
+$uuw=0;
+while ($uuw<1) {
        $w[]=join(' ',cur_dt());
 
        //...
@@ -101,8 +102,9 @@ while ($uuw==false) {
        $w[] =series($vo);
        $w[]=series($vo);
        $w[] =series($vo);
-       $uuw =universal_auth_db($w);}
+       $dat=universal_auth_db($w);$uuw=$dat[0];}
 
+echo var_dump($dat[1])." ## ";
 
 switch ($pass) {
     case 4:
@@ -120,7 +122,5 @@ switch ($pass) {
        $o[]='<p style="border:5px;word-wrap:break-word;font-size:65%">'.$res.'</p>';
        $o[]='</body></html>';
        echo join('',$o);}
-
-*/
 
 ?>
