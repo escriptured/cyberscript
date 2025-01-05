@@ -26,6 +26,7 @@ function universal_auth_db($a) {
        if(file_exists($f)) {
           $re=0;
        } else {
+          $re=-3;
           if(created($f)) {
             /*file_put_contents($f.'/endpoint.php',json_encode($a));
             $re=-2;
@@ -38,7 +39,7 @@ function universal_auth_db($a) {
    return $re;
 }
 
-echo " 22 # ".universal_auth_db(["Jan-2025","test_sandbox","0","1","2"])." # ";
+echo " 18 # ".universal_auth_db(["Jan-2025","test_sandbox","0","1","2"])." # ";
 /*
 if(!isset($_GET["lwl"])) {}else{
      if(!empty(trim($_GET["lwl"]))) {
