@@ -64,8 +64,8 @@ if(!isset($_GET["fmt"])) {}else{
        $pass=$pass+4;}}  
 
 
-$uuw=[-1,""];
-while ($uuw[0]<0) {
+$uuw=-1;
+while ($uuw<0) {
        $w=[];
        $ww["lw"]=join(' ',cur_dt());
        $w[]=$ww["lw"];
@@ -107,7 +107,7 @@ while ($uuw[0]<0) {
        $w[]=$ww["3"];
        $ww["4"] =series($vo);
        $w[]=$ww["4"];
-       $uuw=universal_auth_db($ww,1);}
+       $uuw=universal_auth_db($ww,1)[0];}
        
 
 //echo var_dump($dat[1])." ++ ";
