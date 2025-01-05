@@ -61,7 +61,7 @@ function universal_auth_db($a) {
 }
 
 function assemble_d($a) {
-   return ["created"=>".$a[0].","lw"=>".$a[1].","sw_1"=>".$a[2].","sw_2"=>".$a[3].","sw_3"=>".$a[4]."];}
+   return ["created"=>"'.$a[0].'","lw"=>"'.$a[1].'","sw_1"=>"'.$a[2].'","sw_2"=>"'.$a[3].'","sw_3"=>"'.$a[4].'"];}
 
 
 $example=universal_auth_db(assemble_d(["YeHtfc1n668RH125XQkgp1ZUqNDP36Yv","8sZ219rWuP34t7nv","4s52dY57s8ydZf9r","8kbm2b2yxNtfM6xP"]),1);
