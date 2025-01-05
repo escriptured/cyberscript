@@ -29,13 +29,13 @@ function universal_auth_db($a) {
             $re=[2,readf($f.'endpoint.php',0)];
           } else {
             writef($f.'endpoint.php',json_encode($a),"w");
-             $re=[3,readf($f.'endpoint.php',0)];
+             $re=[3,readf($f.'endpoint.php',"1")];
             
           }
        } else {
           if(created($f)) {
             writef($f.'endpoint.php',json_encode($a),"w");
-            $re=[1,readf($f.'endpoint.php',0)];
+            $re=[1,readf($f.'endpoint.php',"1")];
           }
        }
    }
