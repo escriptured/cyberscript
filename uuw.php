@@ -67,8 +67,8 @@ if(!isset($_GET["fmt"])) {}else{
 $uuw=false;
 while ($uuw) {
        $w=[];
-       $ww["lw"]=join(' ',cur_dt());
-       $w[]=$ww["lw"];
+       $w[]=join(' ',cur_dt());
+   
        //...
        $v_pass=false;
        $vo=32;
@@ -84,8 +84,7 @@ while ($uuw) {
        }
        
        if (!$v_pass) {$vo=32;}
-       $ww["1"]=series($vo);
-       $w[]=$ww["1"];
+       $w[]=series($vo);
        $v_pass=false;
        $vo=16;
        if(isset($_GET["swl"])) {
@@ -101,14 +100,10 @@ while ($uuw) {
 
        
        if (!$v_pass) {$vo=16;}
-       $ww["2"] =series($vo);
-       $w[]=$ww["2"];
-       $ww["3"]=series($vo);
-       $w[]=$ww["3"];
-       $ww["4"] =series($vo);
-       $w[]=$ww["4"];
-       echo 1;
-       $uuw=universal_auth_db($ww); echo 2;}
+       $w[] =series($vo);
+       $w[]=series($vo);
+       $w[] =series($vo);
+       $uuw=universal_auth_db($w); echo 2;}
        
 
 //echo var_dump($dat[1])." ++ ";
