@@ -11,6 +11,8 @@
 
 // PHASE : CI 
 // DRAFT : B1.0.0.0
+
+
 include 'generic.php';
 $o=[];
 $w=[];
@@ -24,7 +26,7 @@ function universal_auth_db($a) {
        $f= 'x_@_'.join('/',$d);
        if(is_file_existing($f)) {
           if(is_file_existing($f.'endpoint.php')) {            
-            $re=[2,json_decode(readf($f.'endpoint.php',0),true)];
+            $re=[2,json_decode(readf($f.'endpoint.php',"1"),true)];
           } else {
              writef($f.'endpoint.php',json_encode($a,JSON_PRETTY_PRINT),"w");
              $re=[3,json_decode(readf($f.'endpoint.php',"1"),true)];
