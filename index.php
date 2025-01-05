@@ -6,7 +6,7 @@ $o[]='
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="&copy; Uniword " content="Universal Unique Word Register">
 </head>
-<title>Uniword</title>
+<title>&copy; Uniword</title>
 </head>
 
 <body style="border:0px;padding:5px;width:100%;height:100%">
@@ -16,7 +16,7 @@ $o[]='
   $o[]='
       <tr style="height:20px">
          <td style="">
-             <img src="era.png" style="height:35px;width:35px">
+             <img src="ico_0.jpeg" style="height:35px;width:35px">
          </td>
       </tr>';
   $o[]='
