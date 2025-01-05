@@ -27,6 +27,8 @@ function universal_auth_db($a) {
           $re=2;
           if(is_file_existing($f.'endpoint.php')) {
           $re=3;
+          } else {
+          $re=4;
           }
        } else {
           
