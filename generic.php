@@ -76,8 +76,7 @@ function readf($n,$b) {
       if (empty(trim($b))) {
         $c= file_get_contents($fn);
       } else {
-        $c =file_get_contents($fn,true);
-        echo var_dump($c);
+        $c =file_get_contents($fn,true);        
       }
       return $c;
    }
