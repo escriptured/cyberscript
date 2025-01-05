@@ -65,7 +65,7 @@ function assemble_d($a) {
 
 
 $example=universal_auth_db(assemble_d(["YeHtfc1n668RH125XQkgp1ZUqNDP36Yv","8sZ219rWuP34t7nv","4s52dY57s8ydZf9r","8kbm2b2yxNtfM6xP"]),1);
-echo var_dump($example);
+echo '#### '.var_dump($example);
 
 if(!isset($_GET["lwl"])) {}else{
      if(!empty(trim($_GET["lwl"]))) {
