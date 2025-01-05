@@ -18,22 +18,24 @@ $pass=0;
 
 
 function universal_auth_db($a) {
-   $re=-1;
+   $re=[-1,""];
    $d=[];
-   for($v =1;$v<count($a)-2;$v++) {
+   for($v =1;$v<count($a)-1;$v++) {
        $d[]=$a[$v];
        $f= '_@_'.join('/',$d);
        if(is_file_existing($f)) {
           if(is_file_existing($f.'endpoint.php')) {
-            $re=2;
+             
+            $re=[2,readf($f.'endpoint.php',0)];
           } else {
             writef($f.'endpoint.php',json_encode($a),"w");
-            $re=3;
+             $re=[3,readf($f.'endpoint.php',0)];
+            
           }
        } else {
           if(created($f)) {
-            writef($f.'/endpoint.php',json_encode($a),"w");
-            $re=1;
+            writef($f.'endpoint.php',json_encode($a),"w");
+            $re=[1,readf($f.'endpoint.php',0)];
           }
        }
    }
@@ -41,10 +43,10 @@ function universal_auth_db($a) {
 }
 
 $fe=universal_auth_db(["Jan-2025","test_sandbox","0","1","2"]);
-echo $fe." # ";
-if($fe>0) {
+echo var_dump($fe)." # ";
+if($fe[0]>0) {
    
-   echo "7";
+   echo "7.".var_dump($fe[1]);
 }
 
 /*
