@@ -25,6 +25,9 @@ function universal_auth_db($a) {
        $f= '_@_'.join('/',$d);
        if(is_file_existing($f)) {
           $re=2;
+          if(is_file_existing($f.'endpoint.php')) {
+          $re=3;
+          }
        } else {
           
           if(created($f)) {
@@ -42,6 +45,7 @@ function universal_auth_db($a) {
 $fe=universal_auth_db(["Jan-2025","test_sandbox","0","1","2"]);
 echo $fe." # ";
 if($fe>0) {
+   
    echo "7";
 }
 
