@@ -41,7 +41,7 @@ function universal_auth_db($a) {
 }
 
 $fe=universal_auth_db(["Jan-2025","test_sandbox","1","1","2"]);
-echo " # ";
+echo var_dump($fe)." # ";
 if($fe[0]>0) {
    echo var_dump($fe[1]);
 }
