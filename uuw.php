@@ -15,8 +15,6 @@ $o=[];
 $w=[];
 $pass=0;
 
-
-
 function universal_auth_db($a) {
    $re=[-1,""];
    $d=[];
@@ -37,7 +35,6 @@ function universal_auth_db($a) {
           }
        }
    }
-   
    return $re;
 }
 
