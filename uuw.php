@@ -94,7 +94,7 @@ while ($uuw<1) {
        $dat=universal_auth_db($w);
        $uuw=$dat[0];}
 
-echo var_dump($dat[1])." ## ";
+//echo var_dump($dat[1])." ## ";
 
 switch ($pass) {
     case 4:
