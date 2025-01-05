@@ -60,7 +60,13 @@ function universal_auth_db($a) {
    return $re;
 }
 
-echo " ### ".var_dump(universal_auth_db(["created"=>"2025 01 05 02 20 51 UTC","lw"=>"FaD93Rzr6NrB6f8VcxE2hz96B6P7tjAg","sw_1"=>"n1HjxFvptGsABn4t","sw_2"=>"BPuBVzmhbVk22J2C","sw_3"=>"m3XE4wvf3fp1pqW7"],1))." # ";
+function assemble_d($a) {
+   return ["created"=>".$a[0].","lw"=>".$a[1].","sw_1"=>".$a[2].","sw_2"=>".$a[3].","sw_3"=>".$a[4]."];}
+
+
+$example=universal_auth_db(assemble_d(["YeHtfc1n668RH125XQkgp1ZUqNDP36Yv","8sZ219rWuP34t7nv","4s52dY57s8ydZf9r","8kbm2b2yxNtfM6xP"]),1);
+echo var_dump($example);
+
 if(!isset($_GET["lwl"])) {}else{
      if(!empty(trim($_GET["lwl"]))) {
         $pass=1;}}
