@@ -38,14 +38,6 @@ function universal_auth_db($a) {
    return $re;
 }
 
-/*
-$fe=universal_auth_db(["created"=>"Jan-2025","lw" =>"test_sandbox","sw_1" =>"1","sw_2"=> "1","sw_3"=>"3"]);
-if($fe[0]>0) {
-   echo var_dump($fe[1]);
-}*/
-
-
-
 if(!isset($_GET["lwl"])) {}else{
      if(!empty(trim($_GET["lwl"]))) {
         $pass=1;}}
