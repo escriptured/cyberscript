@@ -18,7 +18,7 @@ $o=[];
 $w=[];
 $pass=0;
 
-function universal_auth_db($a) {
+function the_universal_auth_db($a) {
    $re=false;
 
         // create
@@ -70,7 +70,7 @@ while ($uuw) {
        $w[]=join(' ',cur_dt());
    
        //...
-       $v_pass=false;
+       /*$v_pass=false;
        $vo=32;
        if(isset($_GET["lwl"])) {
          if(!empty(trim($_GET["lwl"]))) {
@@ -103,7 +103,9 @@ while ($uuw) {
        $w[] =series($vo);
        $w[]=series($vo);
        $w[] =series($vo);
-       $uuw=universal_auth_db($w); echo 2;}
+       $uuw=the_universal_auth_db($w);*/
+       $uuw=true;
+   }
        
 
 //echo var_dump($dat[1])." ++ ";
