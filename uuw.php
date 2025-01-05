@@ -24,20 +24,15 @@ function universal_auth_db($a) {
        $d[]=$a[$v];
        $f= '_@_'.join('/',$d);
        if(is_file_existing($f)) {
-          $re=2;
           if(is_file_existing($f.'endpoint.php')) {
-          $re=3;
+            $re=2;
           } else {
             writef($f.'endpoint.php',json_encode($a),"w");
-             $re=5;
+            $re=3;
           }
        } else {
-          
           if(created($f)) {
-            /*file_put_contents($f.'/endpoint.php',json_encode($a));
-            $re=-2;
-            echo file_get_contents($f.'/endpoint.php');
-            */
+            writef($f.'/endpoint.php',json_encode($a),"w");
             $re=1;
           }
        }
