@@ -80,7 +80,7 @@ function readf($n,$b) {
         $c= file_get_contents($fn);
       } else {
         $c =file_get_contents($fn,true);
-   
+        echo var_dump($c);
       }
       return $c;
    }
