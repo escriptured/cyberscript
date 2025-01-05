@@ -55,7 +55,7 @@ if(!isset($_GET["fmt"])) {}else{
 
 $uuw=0;
 while ($uuw<1) {
-       $w["created"]=join(' ',cur_dt());
+       $w["0"]=join(' ',cur_dt());
 
        //...
        $v_pass=false;
@@ -72,7 +72,7 @@ while ($uuw<1) {
        }
        
        if (!$v_pass) {$vo=32;}
-       $w["lw"]=series($vo);
+       $w[1]=series($vo);
 
        $v_pass=false;
        $vo=16;
@@ -89,10 +89,11 @@ while ($uuw<1) {
 
        
        if (!$v_pass) {$vo=16;}
-       $w["sw_1"] =series($vo);
-       $w["sw_2"]=series($vo);
-       $w["sw_3"] =series($vo);
+       $w["2"] =series($vo);
+       $w["3"]=series($vo);
+       $w["4"] =series($vo);
        $dat=universal_auth_db($w);
+       echo var_dump($dat)."-";
        $uuw=$dat[0];}
 
 //echo var_dump($dat[1])." ## ";
