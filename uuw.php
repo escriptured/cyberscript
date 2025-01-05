@@ -22,20 +22,6 @@ function universal_auth_db($a) {
    $re=[-1,""];
    $d=[];
 
-   switch ($m) {
-      case 0:
-        // read 
-        /*for($v =1;$v<count($a)-1;$v++) {
-        $d[]=$a[$v];
-        }
-        $f= 'x_@_'.join('/',$d);
-        if(is_file_existing($f)) {
-          if(is_file_existing($f.'endpoint.php')) {            
-            $re=[2,json_decode(readf($f.'endpoint.php',"1"),true)];
-          }
-        }*/
-      break;
-      case 1:
         // create
     for($v =1;$v<count($a)-1;$v++) {
        $d[]=$a[$v];
@@ -53,10 +39,7 @@ function universal_auth_db($a) {
             $re=[1,json_decode(readf($f.'endpoint.php',"1"),true)];
           }
        }
-     }
-     break;
-     default:
-   }
+    }
    return $re;
 }
 
@@ -124,7 +107,7 @@ while ($uuw[0]<0) {
        $w[]=$ww["3"];
        $ww["4"] =series($vo);
        $w[]=$ww["4"];
-       $uuw=universal_auth_db($ww,1);}}
+       $uuw=universal_auth_db($ww,1);}
        
 
 //echo var_dump($dat[1])." ++ ";
