@@ -77,7 +77,6 @@ if($try==$try_max){
   $w=universal_error_code(1);
   $new_pass=true;}
 }
-
 echo json_encode($w);
 ?>
 
