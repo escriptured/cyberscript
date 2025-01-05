@@ -104,7 +104,7 @@ while ($uuw[0]<0) {
        }
 
 //echo var_dump($dat[1])." ## ";
-echo " ## ".$pass;
+echo " ### ".$pass;
 switch ($pass) {
     case 4:
     case 5:
