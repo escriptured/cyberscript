@@ -11,10 +11,7 @@ function setuseralias($n,$a,$u,$c,$d) {
    $ar=[];
    $dr=$_SERVER['DOCUMENT_ROOT'];
    $fn = $dr.$n;
-   
-   //if(file_exists($fn)){
-     // $ar = file_get_contents($fn,true);
-   //}
+
    $ar[$a]["t"]=date('Y m d H i s');
    $ar[$a]["u"]=$u;
    $ar[$a]["c"]=$c;
